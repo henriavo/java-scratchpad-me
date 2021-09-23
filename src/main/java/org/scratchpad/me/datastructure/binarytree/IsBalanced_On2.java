@@ -1,7 +1,7 @@
-package org.scratchpad.me.datastructure;
+package org.scratchpad.me.datastructure.binarytree;
 
 
-public class BalancedBinaryTree {
+public class IsBalanced_On2 {
 
     public static void main(String[] args) {
         System.out.println("hello world!");

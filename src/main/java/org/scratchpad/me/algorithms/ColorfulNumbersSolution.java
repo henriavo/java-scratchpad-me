@@ -1,6 +1,5 @@
-package org.scratchpad.me;
+package org.scratchpad.me.algorithms;
 
-import java.util.Arrays;
 import java.util.Hashtable;
 
 public class ColorfulNumbersSolution {

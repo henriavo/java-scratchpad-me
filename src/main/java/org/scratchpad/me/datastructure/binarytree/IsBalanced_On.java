@@ -1,9 +1,9 @@
-package org.scratchpad.me.datastructure;
+package org.scratchpad.me.datastructure.binarytree;
 
-public class BalancedBinaryTreeTwo {
+public class IsBalanced_On {
 
     public static void main(String[] args){
-        BalancedBinaryTree.TreeNode input = new BalancedBinaryTree.TreeNode(5);
+        IsBalanced_On2.TreeNode input = new IsBalanced_On2.TreeNode(5);
         if(checkHeight(input) == -1)
             System.out.println("Not balanced");
         else
@@ -11,7 +11,7 @@ public class BalancedBinaryTreeTwo {
     }
 
     //O(n) solution
-    public static int checkHeight(BalancedBinaryTree.TreeNode root){
+    public static int checkHeight(IsBalanced_On2.TreeNode root){
         // base case
         if(root == null)
             return 0;

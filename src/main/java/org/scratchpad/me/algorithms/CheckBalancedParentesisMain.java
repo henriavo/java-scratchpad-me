@@ -1,4 +1,4 @@
-package org.scratchpad.me;
+package org.scratchpad.me.algorithms;
 
 import java.util.Stack;
 
