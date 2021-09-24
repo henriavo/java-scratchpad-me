@@ -2,16 +2,28 @@ package org.scratchpad.me.datastructure.binarytree;
 
 public class IsBalanced_On {
 
-    public static void main(String[] args){
-        IsBalanced_On2.TreeNode input = new IsBalanced_On2.TreeNode(5);
-        if(checkHeight(input) == -1)
-            System.out.println("Not balanced");
-        else
-            System.out.println("Balanced!");
+    static class TreeNode {
+        int value;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int n){
+            this.value = n;
+        }
+    }
+
+    public static Boolean isBalanced(TreeNode root){
+        if(checkHeight(root) == -1) {
+            System.out.println("not balanced!");
+            return false;
+        }
+        else{
+            System.out.println("yes balanced!");
+            return true;
+        }
     }
 
     //O(n) solution
-    public static int checkHeight(IsBalanced_On2.TreeNode root){
+    private static int checkHeight(TreeNode root){
         // base case
         if(root == null)
             return 0;
@@ -30,6 +42,7 @@ public class IsBalanced_On {
         // check if current node is balanced
         int heightDiff = leftHeight - rightHeight;
         if (Math.abs(heightDiff) > 1){
+            System.out.println("height diff is: " + heightDiff);
             return -1; // not balanced
         }
         else { // return height
