@@ -1,11 +1,11 @@
 package org.scratchpad.me.datastructure.binarytree;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 import org.scratchpad.me.datastructure.binarytree.IsBalanced_On.TreeNode;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 public class IsBalanced_On_Test {
 
@@ -41,7 +41,7 @@ public class IsBalanced_On_Test {
         three.left = new TreeNode(4);
         three.left.left = new TreeNode(5);
 
-        assertTrue(IsBalanced_On.isBalanced(one));
+        assertFalse(IsBalanced_On.isBalanced(one));
     }
 
     @After

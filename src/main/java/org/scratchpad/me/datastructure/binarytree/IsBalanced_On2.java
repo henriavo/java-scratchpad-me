@@ -4,6 +4,8 @@ package org.scratchpad.me.datastructure.binarytree;
 public class IsBalanced_On2 {
 
     // O(n^2) solution
+    // NOTE: it's a recursive method calling on a recursive method.
+    // hence On^2
     public static boolean isBalanced(TreeNode root) {
         //base case
         if (root==null) return true;
@@ -20,6 +22,7 @@ public class IsBalanced_On2 {
     }
 
     // recursive method to find tree height
+    // CLASSIC ALGORITHM
     private static int getHeight(TreeNode root){
         //base case
         if(root == null)
